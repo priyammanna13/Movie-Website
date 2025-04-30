@@ -1,0 +1,118 @@
+/* Container for the entire page */
+/* .home-container {
+    padding: 2rem 1.5rem;
+    background: #f9fafb;
+    min-height: 100vh;
+  } */
+  
+  
+  /* Section headings */
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Movie grid: responsive columns with spacing */
+  .movie-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Movie card box */
+  .movie-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Poster image */
+  .movie-poster {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border: 1px solid #e5e7eb; /* Light border around each poster */
+    border-radius: 8px;  /* Rounded corners for the border */
+    transition: transform 0.3s ease;  /* Smooth effect when hovered */
+    box-shadow: 0 0 15px #00ffc3, 0 0 30px #00ffc3, 0 0 45px #00ffc3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .movie-card:hover .movie-poster {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    border-color: #6366f1;  /* Border color changes to blue on hover */
+  }
+  /* Container for text info */
+  .movie-info {
+    padding: 0.75rem;
+    background-color:hsla(249, 100%, 87%, 0.61);
+  }
+  
+  /* Title styling */
+  .movie-title {
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:black;
+  }
+  
+  /* Rating + release date */
+  .movie-meta {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0.25rem 0;
+  }
+  
+  /* Overview with 3-line ellipsis */
+  .movie-overview {
+    font-size: 0.75rem;
+    color: #4b5563;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
+  .search-section {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 0.5rem;
+    width: 300px;
+  }
+  
+  .search-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #e67e22;
+  }
